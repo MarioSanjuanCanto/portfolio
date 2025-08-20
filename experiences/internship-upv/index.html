@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internship at UPV — Mario Sanjuan</title>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <style>
+        .image-text-section {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: rgba(59, 130, 246, .05);
+            border: 1px solid rgba(59, 130, 246, .2);
+            border-radius: 12px;
+        }
+
+        .image-text-container {
+            display: grid;
+            grid-template-columns: 500px 1fr;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        .image-text-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 2px solid rgba(59, 130, 246, .3);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, .2);
+        }
+
+        .image-text-container .text-content h4 {
+            color: #60a5fa;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .image-text-container .text-content p {
+            color: #cbd5e1;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .image-text-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .image-text-container img {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo"><a href="../../index.html#experience" style="text-decoration:none;color:inherit">MARIO
+                SANJUAN</a></div>
+        <div class="nav-links">
+            <a href="../../index.html#about">ABOUT ME</a>
+            <a href="../../index.html#experience">EXPERIENCE</a>
+            <a href="../../index.html#skills">SKILLS</a>
+            <a href="../../index.html#education">EDUCATION</a>
+            <a href="../../index.html#awards">ACHIEVEMENTS</a>
+            <a href="../../index.html#contact">CONTACT</a>
+        </div>
+    </nav>
+
+    <section class="section" style="padding-top:7rem">
+        <h1 class="section-title">Internship at UPV</h1>
+        <div class="grid-container">
+            <div class="card">
+                <div class="date">2024 – Present</div>
+                <h3>Role</h3>
+                <p>Software Developer & Researcher</p>
+
+                <h3>Overview</h3>
+                <p>Development of face-tracking software using Unity and Python to support accessibility in healthcare.
+                    The project enables children with mobility problems to interact with Tella, an educational
+                    application developed at HVL Medielab.</p>
+
+                <h3>Key Responsibilities</h3>
+                <ul>
+                    <li>Researched and evaluated different technologies to identify the most suitable approach for
+                        face-tracking.</li>
+                    <li>Designed and implemented face-tracking functionality combining Python and Unity.</li>
+                    <li>Adapted the Tella educational game to the latest Unity versions and ensured compatibility with
+                        the face-tracking system.</li>
+                    <li>Prepared technical documentation and demos for stakeholders.</li>
+                </ul>
+
+                <h3 style="margin-top: 1em;">Tech Stack</h3>
+                <p>Unity, C#, Git, Python, Blender.</p>
+
+                <h3 style="margin-top: 1em;">Images</h3>
+
+                <div class="image-text-section">
+                    <div class="image-text-container">
+                        <img src="../../assets/images/face-tracking-demo.jpg" alt="Face Tracking Demo" />
+                        <div class="text-content">
+                            <h4>Face Tracking Result</h4>
+                            <p>This screenshot shows the educational game we integrated with our face-tracking system.
+                                The pencil acts as the cursor and moves purely with head motion. To give the player
+                                clear aiming feedback, we also added the small chicken head overlay, which mirrors the
+                                user’s head movements in real time..</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image-text-section">
+                    <div class="image-text-container">
+                        <img src="../../assets/images/mediapipe_python.jpg" alt="Tella Game Interface" />
+                        <div class="text-content">
+                            <h4>Meadipipe test implementation using Python </h4>
+                            <p>After an extensive investigation, we determined that the most suitable tool for obtaining
+                                facial landmarks was MediaPipe, a framework developed by Google that provides
+                                cross-platform, customizable machine learning solutions for real-time computer vision
+                                tasks, including face and hand tracking. Once we familiarized ourselves with its
+                                functionalities, we proceeded to explore existing MediaPipe integrations for Unity.
+                                <br><br>Note: The one in the picture is me :D
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image-text-section">
+                    <div class="image-text-container">
+                        <img src="../../assets/images/mediapipe_in_unity.jpg" alt="Healthcare Application" />
+                        <div class="text-content">
+                            <h4>MediaPipe in Unity</h4>
+                            <p>This image illustrates the early stages of the project, during which we were developing
+                                the core mechanics and adapting the plugin to integrate seamlessly with the application.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <p style="margin-top:1.5rem"><a class="btn btn-outline" href="../../index.html#experience">← Back to
+                        Experience</a></p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
