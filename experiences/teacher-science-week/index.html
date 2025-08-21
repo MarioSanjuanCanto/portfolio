@@ -6,6 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Teacher at Science Week — Mario Sanjuan</title>
     <link rel="stylesheet" href="../../assets/css/style.css" />
+    <style>
+        .image-text-section {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: rgba(59, 130, 246, .05);
+            border: 1px solid rgba(59, 130, 246, .2);
+            border-radius: 12px;
+        }
+
+        .image-text-container {
+            display: grid;
+            grid-template-columns: 500px 1fr;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        .image-text-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 2px solid rgba(59, 130, 246, .3);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, .2);
+        }
+
+        .image-text-container .text-content h4 {
+            color: #60a5fa;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .image-text-container .text-content p {
+            color: #cbd5e1;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .image-text-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .image-text-container img {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -28,14 +76,39 @@
             <div class="card">
                 <div class="date">2023</div>
                 <h3>Overview</h3>
-                <p>Introduced video games and their creation process to high school and vocational students.</p>
+                <p>The primary objective of this activity was to provide an introduction to the concept of video
+                    games and
+                    their creation process to high school and FP students.</p>
 
                 <h3>Highlights</h3>
                 <ul>
-                    <li>Hands-on introduction to game design and Unity.</li>
+                    <li>Introduction to game design concepts and Unity.</li>
                     <li>Live demos and interactive exercises.</li>
                     <li>Q&A with students about careers in tech.</li>
                 </ul>
+
+                <h3 style="margin-top: 1em;">Images</h3>
+
+                <div class="image-text-section">
+                    <div class="image-text-container">
+                        <img src="../../assets/images/teaching.jpg" alt="Science Week Presentation" />
+                        <div class="text-content">
+                            <h4>Giving the class to the Students</h4>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image-text-section">
+                    <div class="image-text-container">
+                        <img src="../../assets/images/trying_ar.jpg" alt="Unity Demo" />
+                        <div class="text-content">
+                            <h4>Students trying AR technologies</h4>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+
 
                 <p style="margin-top:1.5rem"><a class="btn btn-outline" href="../../index.html#experience">← Back to
                         Experience</a></p>

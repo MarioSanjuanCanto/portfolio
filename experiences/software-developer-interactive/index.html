@@ -6,6 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Software Developer (Interactive) — Mario Sanjuan</title>
     <link rel="stylesheet" href="../../assets/css/style.css" />
+    <style>
+        .image-text-section {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: rgba(59, 130, 246, .05);
+            border: 1px solid rgba(59, 130, 246, .2);
+            border-radius: 12px;
+        }
+
+        .image-text-container {
+            display: grid;
+            grid-template-columns: 500px 1fr;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        .image-text-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 2px solid rgba(59, 130, 246, .3);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, .2);
+        }
+
+        .image-text-container .text-content h4 {
+            color: #60a5fa;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .image-text-container .text-content p {
+            color: #cbd5e1;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .image-text-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .image-text-container img {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -23,22 +71,50 @@
     </nav>
 
     <section class="section" style="padding-top:7rem">
-        <h1 class="section-title">Software Developer — Interactive</h1>
+        <h1 class="section-title">Software Developer</h1>
         <div class="grid-container">
             <div class="card">
                 <div class="date">2022 – 2024</div>
                 <h3>Overview</h3>
-                <p>3D, Virtual Reality and Augmented Reality applications using Unity.</p>
+                <p>During the course of two years, I developed 3D, Virtual Reality and Augmented Reality applications
+                    using Unity.</p>
 
                 <h3>Key Responsibilities</h3>
                 <ul>
-                    <li>Developed gameplay and interaction systems in C#.</li>
+                    <li>Built 3D/VR/AR applications with Unity and C#.</li>
                     <li>Optimized performance for VR devices.</li>
-                    <li>Version control with Git and team collaboration.</li>
+                    <li>Version control with Git.</li>
                 </ul>
 
                 <h3 style="margin-top: 1em;">Tech Stack</h3>
-                <p>Unity, C#, XR Interaction Toolkit, Git.</p>
+                <p>Unity, C#, XR Interaction Toolkit, Git, Blender.</p>
+
+                <h3 style="margin-top: 1em;">Images</h3>
+
+                <div class="image-text-section">
+                    <div class="image-text-container">
+                        <img src="../../assets/images/simon_game_main.jpg" alt="VR Application" />
+                        <div class="text-content">
+                            <h4>Virtual Reality Application</h4>
+                            <p>This screenshot shows one of many VR applications I developed during my time at
+                                Interactive. This app is a Game in which you have to recreate color sequences, by
+                                pressing the buttons in the correct order.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image-text-section">
+                    <div class="image-text-container">
+                        <img src="../../assets/images/People_trying_games.jpg" alt="AR Prototype" />
+                        <div class="text-content">
+                            <h4>People Trying the VR APPs</h4>
+                            <p>In the <picture>, it can be seen how people are trying the VR apps I developed. The VR
+                                    Apps are the one of the color sequences, a Goal Keeper Simulator and a VR Shooting
+                                    Range Simulator</picture>.</p>
+                        </div>
+                    </div>
+                </div>
+
 
                 <p style="margin-top:1.5rem"><a class="btn btn-outline" href="../../index.html#experience">← Back to
                         Experience</a></p>
