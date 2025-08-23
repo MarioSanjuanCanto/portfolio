@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website - Mario Sanjuan</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <style>
+        .card-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        
+        .image-text-section {
+            margin: 3rem 0;
+        }
+        
+        .image-text-container {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .image-text-container img {
+            width: 500px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .image-text-container .text-content h4 {
+            color: #a855f7;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        
+        .image-text-container .text-content p {
+            line-height: 1.6;
+            color: #e5e7eb;
+        }
+        
+        @media (max-width: 768px) {
+            .image-text-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .image-text-container img {
+                width: 100%;
+                max-width: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../../index.html">Mario Sanjuan</a>
+        </div>
+        <div class="nav-links">
+            <a href="../../index.html">Home</a>
+            <a href="../../index.html#about">About</a>
+            <a href="../../index.html#experience">Experience</a>
+            <a href="../../index.html#projects">Projects</a>
+            <a href="../../index.html#contact">Contact</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section class="section">
+            <h1 class="section-title">Portfolio Website</h1>
+            <div class="date">2024 - 2025</div>
+            <h3>Personal Project</h3>
+            
+            <div class="card">
+                <h4 style="color: #a855f7; margin-bottom: 1rem;">Overview</h4>
+                <p>A modern, responsive portfolio website built with HTML5, CSS3, and JavaScript. Features a clean design with smooth animations and mobile-first responsive layout. This project showcases my frontend development skills and understanding of modern web design principles.</p>
+                
+                <h4 style="color: #a855f7; margin-top: 2rem; margin-bottom: 1rem;">Key Features</h4>
+                <ul>
+                    <li>Responsive grid layout that adapts to all screen sizes</li>
+                    <li>Smooth hover animations and transitions</li>
+                    <li>Professional color scheme with modern aesthetics</li>
+                    <li>Interactive navigation with smooth scrolling</li>
+                    <li>Mobile-first responsive design approach</li>
+                    <li>Optimized performance and accessibility</li>
+                </ul>
+                
+                <h4 style="color: #a855f7; margin-top: 2rem; margin-bottom: 1rem;">Tech Stack</h4>
+                <ul>
+                    <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript</li>
+                    <li><strong>Design:</strong> Modern UI/UX principles</li>
+                    <li><strong>Responsive:</strong> Mobile-first approach with CSS Grid and Flexbox</li>
+                    <li><strong>Animations:</strong> CSS transitions and hover effects</li>
+                    <li><strong>Performance:</strong> Optimized images and efficient CSS</li>
+                </ul>
+            </div>
+
+            <div class="image-text-section">
+                <h3 class="subsection-title">Website Screenshots</h3>
+                
+                <div class="image-text-container">
+                    <img src="../../assets/images/portfolio-hero.jpg" alt="Portfolio Hero Section">
+                    <div class="text-content">
+                        <h4>Hero Section</h4>
+                        <p>The main hero section features a clean, modern design with my name, role, and call-to-action buttons. The layout is optimized for both desktop and mobile viewing.</p>
+                    </div>
+                </div>
+                
+                <div class="image-text-container">
+                    <img src="../../assets/images/portfolio-projects.jpg" alt="Projects Section">
+                    <div class="text-content">
+                        <h4>Projects Section</h4>
+                        <p>The projects section displays my work in an organized grid layout. Each project card includes detailed information and links to individual project pages.</p>
+                    </div>
+                </div>
+                
+                <div class="image-text-container">
+                    <img src="../../assets/images/portfolio-mobile.jpg" alt="Mobile Responsive Design">
+                    <div class="text-content">
+                        <h4>Mobile Responsive Design</h4>
+                        <p>The website is fully responsive and provides an excellent user experience on all devices. The mobile layout adapts the grid system and navigation for smaller screens.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html> 

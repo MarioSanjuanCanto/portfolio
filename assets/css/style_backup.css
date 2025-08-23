@@ -286,11 +286,19 @@ body::before {
 }
 
 .projects-grid .card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
     width: 100%;
     max-width: 100%;
 }
 
 .card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
     text-decoration: none;
     color: inherit;
     display: block;
@@ -515,114 +523,52 @@ body::before {
     text-decoration: underline;
 }
 
-/* Make entire cards clickable */
 .card-link {
     display: block;
     text-decoration: none;
     color: inherit;
+    position: relative;
+    position: relative;
+}
+
+.card-link::after {
+    content: "→";
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(59, 130, 246, 0.9);
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.card-link:hover::after {
+    opacity: 1;
+    transform: scale(1.1);
+    background: rgba(59, 130, 246, 1);
+}
+
+/* Responsive adjustments for the indicator */
+@media (max-width: 768px) {
+    .card-link::after {
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+        top: 0.75rem;
+        right: 0.75rem;
+    }
 }
 
 .card-link:focus .card {
     outline: 2px solid #60a5fa;
     outline-offset: 6px;
-}
-
-
-/* Photo Carousel Styles */
-.photo-carousel {
-    background: rgba(30, 41, 59, .8);
-    border: 1px solid rgba(59, 130, 246, .2);
-    border-radius: 16px;
-    padding: 3rem;
-    margin: 2rem 0;
-    backdrop-filter: blur(10px);
-}
-
-.carousel-container {
-    position: relative;
-    max-width: 800px;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.carousel-slide {
-    display: none;
-    text-align: center;
-}
-
-.carousel-slide.active {
-    display: block;
-}
-
-.carousel-slide img {
-    width: 100%;
-    height: 250;
-    object-fit: cover;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-}
-
-.carousel-slide h4 {
-    color: #60a5fa;
-    margin: 1rem 0 0.5rem 0;
-    font-size: 1.2rem;
-}
-
-.carousel-slide p {
-    color: #cbd5e1;
-    margin: 0;
-    font-size: 0.95rem;
-}
-
-.carousel-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-    gap: 1rem;
-}
-
-.carousel-btn {
-    background: rgba(59, 130, 246, 0.1);
-    border: 1px solid rgba(59, 130, 246, 0.3);
-    color: #60a5fa;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.carousel-btn:hover {
-    background: rgba(59, 130, 246, 0.2);
-    border-color: #60a5fa;
-    transform: scale(1.1);
-}
-
-.carousel-dots {
-    display: flex;
-    gap: 0.5rem;
-    margin: 0 1rem;
-}
-
-.carousel-dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: rgba(59, 130, 246, 0.3);
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.carousel-dot.active {
-    background: #60a5fa;
-}
-
-.carousel-dot:hover {
-    background: rgba(59, 130, 246, 0.6);
 }

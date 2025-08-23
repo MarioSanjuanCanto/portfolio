@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VR Simon Game — Mario Sanjuan</title>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <style>
+        .image-text-section {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: rgba(59, 130, 246, .05);
+            border: 1px solid rgba(59, 130, 246, .2);
+            border-radius: 12px;
+        }
+
+        .image-text-container {
+            display: grid;
+            grid-template-columns: 500px 1fr;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        .image-text-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 2px solid rgba(59, 130, 246, .3);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, .2);
+        }
+
+        .image-text-container .text-content h4 {
+            color: #60a5fa;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .image-text-container .text-content p {
+            color: #cbd5e1;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .image-text-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .image-text-container img {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo"><a href="../../index.html#projects" style="text-decoration:none;color:inherit">MARIO
+                SANJUAN</a></div>
+        <div class="nav-links">
+            <a href="../../index.html#about">ABOUT ME</a>
+            <a href="../../index.html#experience">EXPERIENCE</a>
+            <a href="../../index.html#skills">SKILLS</a>
+            <a href="../../index.html#education">EDUCATION</a>
+            <a href="../../index.html#awards">ACHIEVEMENTS</a>
+            <a href="../../index.html#contact">CONTACT</a>
+        </div>
+    </nav>
+
+    <section class="section" style="padding-top:7rem">
+        <h1 class="section-title">VR Simon Game</h1>
+        <div class="grid-container">
+            <div class="card">
+                <div class="date">2023 – 2024</div>
+
+                <h3>Overview</h3>
+                <p>Virtual Reality adaptation of the classic Simon memory game, where players must repeat increasingly
+                    complex sequences of colors and sounds.</p>
+
+
+
+                <h3 style="margin-top: 1em;">Technical Implementation</h3>
+                <ul>
+                    <li>Game Engine: Unity </li>
+                    <li>Programming: C# and Unity XR Interaction Toolkit</li>
+                    <li>Version Control: GitLab</li>
+                </ul>
+
+                <h3 style="margin-top: 1em;">Tech Stack</h3>
+                <p>Virtual Reality, C#, Unity XR Development,Gitlab.</p>
+
+
+
+                <h3 style="margin-top: 1em;">GitLab Link</h3>
+
+                <div class="image-text-section">
+                    <div class="image-text-container">
+                        <div class="text-content">
+                            <h4>Unity Project</h4>
+                            <p><a href="https://gitlab.com/msancan3/colormatch" target="_blank"></a></p>
+                            <p>https://gitlab.com/msancan3/colormatch</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <h3 style="margin-top: 1em;">Images</h3>
+
+                <div class="image-text-section">
+                    <div class="image-text-container">
+                        <img src="../../assets/images/simpon.jpg" alt="VR Simon Gameplay" />
+                        <div class="text-content">
+                            <h4>Main Gameplay</h4>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image-text-section">
+                    <div class="image-text-container">
+                        <img src="../../assets/images/simon_project.jpg" alt="Color Sequences" />
+                        <div class="text-content">
+                            <h4>Unity's Project</h4>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <p style="margin-top:1.5rem"><a class="btn btn-outline" href="../../index.html#projects">← Back to
+                        Projects</a></p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

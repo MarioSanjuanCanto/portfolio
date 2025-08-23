@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Virtual Reality Assistant — Mario Sanjuan</title>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <style>
+        .image-text-section {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: rgba(59, 130, 246, .05);
+            border: 1px solid rgba(59, 130, 246, .2);
+            border-radius: 12px;
+        }
+
+        .image-text-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        .image-text-container .text-content h4 {
+            color: #60a5fa;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .image-text-container .text-content p {
+            color: #cbd5e1;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        .image-text-container .text-content a {
+            color: #60a5fa;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color .3s ease;
+        }
+
+        .image-text-container .text-content a:hover {
+            color: #93c5fd;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo"><a href="../../index.html#projects" style="text-decoration:none;color:inherit">MARIO
+                SANJUAN</a></div>
+        <div class="nav-links">
+            <a href="../../index.html#about">ABOUT ME</a>
+            <a href="../../index.html#experience">EXPERIENCE</a>
+            <a href="../../index.html#skills">SKILLS</a>
+            <a href="../../index.html#education">EDUCATION</a>
+            <a href="../../index.html#awards">ACHIEVEMENTS</a>
+            <a href="../../index.html#contact">CONTACT</a>
+        </div>
+    </nav>
+
+    <section class="section" style="padding-top:7rem">
+        <h1 class="section-title">AI Virtual Reality Assistant</h1>
+        <div class="grid-container">
+            <div class="card">
+                <div class="date">2024 – 2025</div>
+
+                <h3>Overview</h3>
+                <p>After a lot of work, I'm excited to share that I've completed my project for the Interactive group: a
+                    virtual reality AI assistant designed to answer questions about the university.</p>
+
+                <h3>How it works</h3>
+                <ol>
+                    <li>Put on the Virtual Reality headset to access the application</li>
+                    <li>Press the red button in front of you to activate the AI system</li>
+                    <li>Ask your question about the university in natural language</li>
+                    <li>An LLM model processes your query, retrieves information from a document, and then generates an
+                        audio response</li>
+                </ol>
+
+                <h3 style="margin-top: 1em;">Tools used</h3>
+                <ol>
+                    <li>FastAPI (Python) for text-to-speech and speech-to-text conversion</li>
+                    <li>Llama (LLM) to analyze and answer questions</li>
+                    <li>Google Docs accessed from Unity as the information source for the AI</li>
+                    <li>Unity as the development platform</li>
+                </ol>
+
+                <h3 style="margin-top: 1em;">Tech Stack</h3>
+                <p>Python, Unity, FastAPI, Llama LLM, Google Docs API.</p>
+
+                <h3 style="margin-top: 1em;">GitLab Link</h3>
+
+                <div class="image-text-section">
+                    <div class="image-text-container">
+                        <div class="text-content">
+                            <h4>Unity Project</h4>
+                            <p><a href="https://gitlab.com/msancan3/vrassistant" target="_blank">AI Virtual
+                                    Reality Assistant - Main Project Repository</a></p>
+                            <p>https://gitlab.com/msancan3/vrassistant</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image-text-section">
+                    <div class="image-text-container">
+                        <div class="text-content">
+                            <h4>Python Server API</h4>
+                            <p><a href="https://gitlab.com/msancan3/vrassistantserver" target="_blank">Python
+                                    FastAPI Services</a></p>
+                            <p>https://gitlab.com/msancan3/vrassistantserver</p>
+                        </div>
+                    </div>
+                </div>
+                <p style="margin-top:1.5rem"><a class="btn btn-outline" href="../../index.html#projects">← Back to
+                        Projects</a></p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

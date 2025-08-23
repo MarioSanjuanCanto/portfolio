@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internship at UPV — Mario Sanjuan</title>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <style>
+        .image-text-section {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: rgba(59, 130, 246, .05);
+            border: 1px solid rgba(59, 130, 246, .2);
+            border-radius: 12px;
+        }
+
+        .image-text-container {
+            display: grid;
+            grid-template-columns: 500px 1fr;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        .image-text-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 2px solid rgba(59, 130, 246, .3);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, .2);
+        }
+
+        .image-text-container .text-content h4 {
+            color: #60a5fa;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .image-text-container .text-content p {
+            color: #cbd5e1;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .image-text-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .image-text-container img {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo"><a href="../../index.html#experience" style="text-decoration:none;color:inherit">MARIO
+                SANJUAN</a></div>
+        <div class="nav-links">
+            <a href="../../index.html#about">ABOUT ME</a>
+            <a href="../../index.html#experience">EXPERIENCE</a>
+            <a href="../../index.html#skills">SKILLS</a>
+            <a href="../../index.html#education">EDUCATION</a>
+            <a href="../../index.html#awards">ACHIEVEMENTS</a>
+            <a href="../../index.html#contact">CONTACT</a>
+        </div>
+    </nav>
+
+    <section class="section" style="padding-top:7rem">
+        <h1 class="section-title">Python Flask Web Application for MySQL</h1>
+        <div class="grid-container">
+            <div class="card">
+                <div class="date">July 2025 – August 2025</div>
+
+
+                <h3>Overview</h3>
+                <p>I developed a complete web interface for managing MySQL databases that allows users to execute SQL
+                    queries and import data from CSV files in an intuitive way.</p>
+
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Web interface for executing SQL queries in real-time</li>
+                    <li>CSV import with drag & drop and delimiter configuration</li>
+                    <li>User authentication system</li>
+                    <li>Query execution history</li>
+                    <li>SQL injection prevention with character escaping</li>
+                </ul>
+
+                <h3 style="margin-top: 1em;">Tech Stack</h3>
+                <p>Python, Flask, MySQL, HTML5, CSS3, JavaScript(AI-generated interface), SQL Connector.</p>
+
+
+                <h3 style="margin-top: 1em;">Project Link</h3>
+                <p>https://gitlab.com/msancan3/mysqlpython</p>
+
+
+                <h3 style="margin-top: 1em;">Images</h3>
+
+                <div class="image-text-section">
+                    <div class="image-text-container">
+                        <img src="../../assets/images/mysql.jpg" alt="Flask Application Dashboard" />
+                        <div class="text-content">
+                            <h4>MySQL Query Editor</h4>
+                            <p>Web interface for executing SQL queries in real-time, after you put the query in the web
+                                interface, the query is passed in the backed to the MySQL database and the results are
+                                displayed in the web interface.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image-text-section">
+                    <div class="image-text-container">
+                        <img src="../../assets/images/login.jpg" alt="CSV Import Interface" />
+                        <div class="text-content">
+                            <h4>Login to the web interface</h4>
+                            <p>In this case, when putting the login information, in the backend I use that information
+                                to create the connection to the MySQL database, trying to see if the user exists in the
+                                database. In case it exists, the user is logged in and the web interface is displayed,
+                                otherwise the user is not logged.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image-text-section">
+                    <div class="image-text-container">
+                        <img src="../../assets/images/import.jpg" alt="Import data from CSV" />
+                        <div class="text-content">
+                            <h4>Import data from CSV</h4>
+                            <p>For importing the data, I read the information from the CSV file, and I use an INSERT
+                                INTO statement to insert the data into the MySQL database.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <p style="margin-top:1.5rem"><a class="btn btn-outline" href="../../index.html#projects">← Back to
+                        Projects</a></p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
